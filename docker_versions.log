@@ -1,0 +1,20 @@
+-------------------------------
+v. 2022-05-02
+
+List of Python packages:
+
+ - louvain
+ - umap-learn
+ - scanpy
+ - rpy2
+ - anndata2ri
+ - multicore-tsne
+ - scvelo
+ - opentsne
+ - plotly
+ - scirpy
+ - squidpy
+ - bash_kernel
+ - ipykernel
+ - igraph
+ - leidenalg
