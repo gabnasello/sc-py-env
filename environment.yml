@@ -1,8 +1,9 @@
-name: sc-py
+name: base
 channels:
  - conda-forge
  - bioconda
 dependencies:
+ - jupyterlab-variableinspector
  - louvain
  - umap-learn
  - scanpy
@@ -13,6 +14,7 @@ dependencies:
  - opentsne
  - plotly
  - scirpy
+ - squidpy
  - bash_kernel
  - ipykernel
  - pip
