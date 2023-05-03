@@ -1,4 +1,16 @@
 -------------------------------
+v. 2022-05-03.1
+
+List of Python packages:
+
+ - scikit-misc
+ - scvi-tools
+ - rich
+ - pip:
+    - scib_metrics
+    - scib
+
+-------------------------------
 v. 2022-05-02
 
 List of Python packages:

@@ -12,12 +12,17 @@ dependencies:
  - multicore-tsne
  - scvelo
  - opentsne
+ - scikit-misc
+ - scvi-tools
  - plotly
  - scirpy
  - squidpy
  - bash_kernel
  - ipykernel
+ - rich
  - pip
  - pip:
     - igraph
     - leidenalg
+    - scib_metrics
+    - scib
