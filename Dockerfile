@@ -5,7 +5,7 @@ FROM jupyter/r-notebook:2023-03-27
 
 # Configure environment
 ENV DOCKER_IMAGE_NAME='sc-py-env'
-ENV VERSION='2023-05-02' 
+ENV VERSION='2023-05-03' 
 
 # Docker name to shell prompt
 ENV PS1A="[docker] \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$"

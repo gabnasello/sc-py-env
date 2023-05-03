@@ -4,7 +4,6 @@ umap-learn
 scanpy
 rpy2
 anndata2ri
-MulticoreTSNE
 scvelo
 opentsne
 plotly
