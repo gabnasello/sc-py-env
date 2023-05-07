@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  sc-env:
-    image: gnasello/sc-env:2023-05-01
+  sc-py-env:
+    image: gnasello/sc-py-env:2023-05-03.1
     build: .
     ports:
       - $JLPORT:$JLPORT

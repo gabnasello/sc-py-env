@@ -18,7 +18,7 @@ From the project folder, run the command below:
 
 To connect to a container that is already running ("datascience" is the service name):
 
-```docker-compose exec sc-env /bin/bash```
+```docker-compose exec sc-py-env /bin/bash```
 
 Close the container with:
 
@@ -28,11 +28,11 @@ Close the container with:
 
 You can run the following command:
 
-```docker run -d -it --rm  -p 7777:7777 -p 7878:7878 --volume $HOME:/home/researcher --user root --name sc-env gnasello/sc-env:latest```
+```docker run -d -it --rm  -p 7777:7777 -p 7878:7878 --volume $HOME:/home/researcher --user root --name sc-py-env gnasello/sc-py-env:latest```
 
 To connect to a container that is already running ("sc-env" is the container name):
 
-```docker exec -it sc-env /bin/bash```
+```docker exec -it sc-py-env /bin/bash```
 
 After use, you close the container with:
 
