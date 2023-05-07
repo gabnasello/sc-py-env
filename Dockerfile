@@ -16,15 +16,6 @@ RUN echo 'conda activate base' >> ~/.bashrc
 # https://stackoverflow.com/questions/61494376/how-to-connect-r-conda-env-to-jupyter-notebook
 RUN conda install -y -n base nb_conda_kernels
 
-#USER root
-#RUN apt-get update && \ 
-#    apt install -yq apt-utils build-essential libfontconfig1-dev cmake vim
-#USER jovyan
-
-# Install Python packages
-#ADD requirements.txt /
-#RUN pip install -r /requirements.txt
-
 # Install packages in environment.yml file
 ADD environment.yml .
 RUN /bin/bash -c "conda env update --file environment.yml"
