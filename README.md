@@ -14,26 +14,10 @@ From the project folder, run the command below:
 
 From the project folder, run the command below:
 
-```docker-compose up -d```
-
-To connect to a container that is already running ("datascience" is the service name):
-
-```docker-compose exec sc-py-env /bin/bash```
-
-Close the container with:
-
-```docker-compose down```
+```docker-compose up```
 
 ## Alternative approach
 
 You can run the following command:
 
-```docker run -d -it --rm  -p 7777:7777 -p 7878:7878 --volume $HOME:/home/researcher --user root --name sc-py-env gnasello/sc-py-env:latest```
-
-To connect to a container that is already running ("sc-env" is the container name):
-
-```docker exec -it sc-py-env /bin/bash```
-
-After use, you close the container with:
-
-```docker rm -f sc-env```
+```docker run -it --rm  -p 8888:8888 --volume $HOME:/home/researcher --name sc-py-env gnasello/sc-py-env:latest```

@@ -13,12 +13,11 @@ dependencies:
  - scvelo
  - opentsne
  - scikit-misc
- - scvi-tools
+# - scvi-tools
  - plotly
  - scirpy
- - squidpy
- - bash_kernel
- - ipykernel
+# - bash_kernel
+# - ipykernel
  - rich
  - pip
  - pip:
