@@ -5,7 +5,7 @@ FROM jupyter/r-notebook:2023-03-27
 
 # Configure environment
 ENV DOCKER_IMAGE_NAME='sc-py-env'
-ENV VERSION='2023-07-16' 
+ENV VERSION='2023-07-17' 
 
 # How to connect all conda envs to jupyter notebook
 # https://stackoverflow.com/questions/61494376/how-to-connect-r-conda-env-to-jupyter-notebook
@@ -14,3 +14,7 @@ RUN conda install -y -n base nb_conda_kernels
 # Install packages in environment.yml file
 ADD environment.yml .
 RUN /bin/bash -c "conda env update --file environment.yml"
+
+# Install Python packages
+ADD requirements.txt /
+RUN pip install -r /requirements.txt
