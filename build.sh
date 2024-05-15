@@ -1,5 +1,5 @@
 #!/bin/bash
 
-VESRION='2023-10-13'
+VESRION='2024-05-15'
 
 docker build --no-cache -t gnasello/sc-py-env:$VESRION .

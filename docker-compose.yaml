@@ -1,19 +1,16 @@
 ---
 version: "3"
 services:
-  linuxserver:
-    image: gnasello/sc-py-env:2023-10-13
+  sc-py:
+    image: gnasello/sc-py-env:2024-05-15
     container_name: sc-py-env
-    security_opt:
-      - seccomp:unconfined # for terminal to work
+    user: root
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      #- SUBFOLDER=/ #optional
-      #- TITLE=linuxserver #optional
+    - NB_USER=researcher
+    - NB_UID=1234
+    - NB_GID=1234
+    - CHOWN_HOME=yes
+    - CHOWN_HOME_OPTS=-R
+    - GRANT_SUDO=yes
     ports:
-      - 3000:3000
-    #devices:
-      #- /dev/dri:/dev/dri #optional
-    shm_size: "1gb" #optional
+      - 8888:8888

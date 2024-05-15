@@ -2,15 +2,15 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gabnasello/sc-py-env/HEAD)
 
-# Build the Docker Image
+# Build the docker images
 
 From the project folder, run the command below:
 
 ```bash build.sh```
 
-# Run Docker container
+# Run docker container
 
-## docker-compose approach (recommended)
+## Standard approach (recommended)
 
 From the project folder, run the command below:
 
@@ -20,4 +20,4 @@ From the project folder, run the command below:
 
 You can run the following command:
 
-```docker run -it --rm  -p 8888:8888 --volume $HOME:/home/researcher --name sc-py-env gnasello/sc-py-env:latest```
+```docker run -p 8888:8888 --name sc-py gnasello/sc-py-env:latest```

@@ -1,4 +1,11 @@
 -------------------------------
+v. 2024-05-15
+
+Build Docker image based on quay.io/jupyter/r-notebook:2023-12-14
+
+Add python packages
+
+-------------------------------
 v. 2023-10-13
 
 Build Docker image based on linuxserver/webtop
