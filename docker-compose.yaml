@@ -2,7 +2,7 @@
 version: "3"
 services:
   sc-py:
-    image: gnasello/sc-py-env:2024-05-15
+    image: gnasello/sc-py-env:2024-05-15.2
     container_name: sc-py-env
     user: root
     environment:

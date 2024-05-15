@@ -1,4 +1,11 @@
 -------------------------------
+v. 2024-05-15.2
+
+Remove "work" directory
+
+Add binder
+
+-------------------------------
 v. 2024-05-15
 
 Build Docker image based on quay.io/jupyter/r-notebook:2023-12-14

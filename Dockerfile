@@ -2,7 +2,10 @@ FROM quay.io/jupyter/r-notebook:2023-12-14
 
 # Configure environment
 ENV DOCKER_IMAGE_NAME='sc-py-env'
-ENV VERSION='2024-05-15' 
+ENV VERSION='2024-05-15.2' 
+
+# Remove work directory
+RUN rm -r /home/jovyan/work
 
 # Install Python packages
 ADD requirements.txt /
